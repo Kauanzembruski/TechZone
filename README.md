@@ -1,0 +1,79 @@
+**🚀 TechZone - Comunidade de Tecnologia**
+
+Uma plataforma web moderna desenvolvida com foco em comunidade, interação e compartilhamento de conteúdo tecnológico, com destaque para setups gamers e troca de conhecimento entre usuários.
+
+📌 Sobre o Projeto
+
+O TechZone é um portal criado como trabalho avaliativo de Desenvolvimento Web, com o objetivo de aplicar na prática conceitos de:
+
+Estruturação com HTML5
+Estilização avançada com CSS3
+Responsividade
+Experiência do usuário (UX/UI)
+
+A proposta é simular uma comunidade online de tecnologia, onde usuários podem explorar conteúdos, interagir e compartilhar seus próprios setups.
+
+🎯 Funcionalidades
+🏠 Página Inicial (Home)
+Banner principal com imagem de fundo
+Apresentação da comunidade
+Seções informativas (tecnologias, áreas de interesse)
+Ranking de membros
+📝 Cadastro
+Formulário para entrada de usuários
+💬 Fórum
+Espaço para interação e discussões
+🖼️ Galeria de Setups
+Exibição de setups enviados pela comunidade
+🎮 Envio de Setup Gamer
+Formulário personalizado com:
+Nome/Nickname
+E-mail
+Nome do setup
+Upload de imagem
+Descrição
+Preview da imagem antes do envio
+Reset inteligente (limpa inclusive a imagem)
+📞 Contato
+Informações e formas de comunicação
+🎨 Design e Estilo
+
+O projeto utiliza uma identidade visual moderna com tema tech/gamer, incluindo:
+
+🌌 Fundo escuro (Dark Mode)
+🔵 Cores neon (ciano e roxo)
+✨ Gradientes e efeitos visuais
+📱 Layout responsivo (mobile-friendly)
+🎯 Microinterações (hover, animações)
+🛠️ Tecnologias Utilizadas
+HTML5
+CSS3
+JavaScript (básico para interações)
+Google Fonts (Inter)
+📱 Responsividade
+
+O site foi desenvolvido com foco em adaptação para diferentes dispositivos, garantindo boa experiência em:
+
+Desktop
+Tablets
+Smartphones
+💡 Diferenciais do Projeto
+Interface moderna inspirada em sites profissionais
+Organização de código limpa e comentada
+Experiência de usuário bem trabalhada
+Funcionalidade de envio de setups com preview de imagem
+Navegação intuitiva
+🚧 Possíveis Melhorias Futuras
+Integração com back-end (ex: Django ou Node.js)
+Sistema de login e autenticação
+Armazenamento real dos setups enviados
+Sistema de curtidas e comentários
+Ranking dinâmico de usuários
+👨‍💻 Autor
+
+Kauan Zembruski
+Projeto desenvolvido para fins acadêmicos na disciplina de Desenvolvimento Web.
+
+📄 Licença
+
+Este projeto foi desenvolvido exclusivamente para fins educacionais.
