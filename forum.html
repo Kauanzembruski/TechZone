@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum - TechZone</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <div class="logo">
+          <div class="logo-icon"><img src="img/LogoTZZ.png" alt="TechZone Logo"></div>
+          <span class="logo-text">TechZone</span>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="forum.html" class="active">Forum</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <h1>Forum da Comunidade</h1>
+    <p>Compartilhe conhecimento e tire suas duvidas</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Deixe seu Comentario</h2>
+    <div class="form-container">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nome-forum">Seu Nome</label>
+          <input type="text" id="nome-forum" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione o assunto</option>
+            <option value="frontend">Front-end</option>
+            <option value="backend">Back-end</option>
+            <option value="ia">Inteligencia Artificial</option>
+            <option value="mobile">Desenvolvimento Mobile</option>
+            <option value="devops">DevOps</option>
+            <option value="geral">Discussao Geral</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="comentario">Seu Comentario</label>
+          <textarea id="comentario" name="comentario" placeholder="Compartilhe sua duvida, opiniao ou conhecimento..."
+            required></textarea>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" class="btn btn-primary">Publicar Comentario</button>
+          <button type="reset" class="btn btn-reset">Limpar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="comments-list">
+      <h2 class="section-title">Comentarios Recentes</h2>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">CS</div>
+          <div class="comment-info">
+            <h4>Carlos Silva</h4>
+            <span>Front-end | 2 horas atras</span>
+          </div>
+        </div>
+        <p class="comment-content">
+          Pessoal, alguem aqui ja trabalhou com React Server Components? Estou migrando um projeto
+          e gostaria de saber quais foram os principais desafios que voces encontraram. Qualquer
+          dica e bem-vinda!
+        </p>
+      </div>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">AR</div>
+          <div class="comment-info">
+            <h4>Ana Rodrigues</h4>
+            <span>Inteligencia Artificial | 5 horas atras</span>
+          </div>
+        </div>
+        <p class="comment-content">
+          Acabei de terminar um curso de Machine Learning e quero comecar um projeto pratico.
+          Vocês teriam sugestoes de datasets interessantes para iniciantes? Estou pensando em
+          algo relacionado a analise de sentimentos.
+        </p>
+      </div>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">PS</div>
+          <div class="comment-info">
+            <h4>Pedro Santos</h4>
+            <span>Back-end | 1 dia atras</span>
+          </div>
+        </div>
+        <p class="comment-content">
+          Estou em duvida entre usar PostgreSQL ou MongoDB para meu novo projeto. E uma aplicacao
+          de e-commerce com muitas relacoes entre entidades. Qual vocês recomendam e por que?
+          Ja usei MySQL antes, mas quero experimentar algo diferente.
+        </p>
+      </div>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">MC</div>
+          <div class="comment-info">
+            <h4>Mariana Costa</h4>
+            <span>DevOps | 2 dias atras</span>
+          </div>
+        </div>
+        <p class="comment-content">
+          Dica para quem esta comecando com Docker: sempre usem docker-compose para gerenciar
+          multiplos containers. Facilita muito o desenvolvimento local e a documentacao do ambiente.
+          Tambem recomendo criar um Makefile com os comandos mais usados!
+        </p>
+      </div>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">LO</div>
+          <div class="comment-info">
+            <h4>Lucas Oliveira</h4>
+            <span>Discussao Geral | 3 dias atras</span>
+          </div>
+        </div>
+        <p class="comment-content">
+          Qual e a opiniao de voces sobre o mercado de trabalho para desenvolvedores em 2026?
+          Estou vendo muitas vagas pedindo conhecimento em IA, voces acham que isso vai se tornar
+          um requisito basico para todas as areas de desenvolvimento?
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="forum.html">Forum</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 Kauan Zembruski - Comunidade de Tecnologia. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

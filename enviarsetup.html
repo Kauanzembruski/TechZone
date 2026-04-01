@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie seu Setup - TechZone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="img/LogoTZZ.png" alt="TechZone Logo">
+                </div>
+                <span class="logo-text">TechZone</span>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="forum.html">Fórum</a></li>
+                    <li><a href="galeria.html" class="active">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="page-header">
+        <h1>Mostre seu Setup Gamer </h1>
+        <p>
+            Seu setup merece ser visto! Compartilhe sua máquina, inspire outros gamers
+            e faça parte da comunidade TechZone.
+        </p>
+    </section>
+
+    <section class="section">
+        <div class="form-container">
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="nome">Nome ou Nick</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: nome ou nickname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="setup-nome">Nome do Setup</label>
+                    <input type="text" id="setup-nome" name="setup_nome"
+                        placeholder="Ex: Setup RGB Insano / Minimalista Preto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="imagem">Imagem do Setup</label>
+                    <input type="file" id="imagem" name="imagem" accept="image/*" required>
+                    <img id="preview" style="margin-top:15px; max-width:100%; border-radius:10px; display:none;">
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao"
+                        placeholder="Descreva seu setup: CPU, GPU, periféricos, iluminação, inspiração..."
+                        required></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">Enviar Setup 🚀</button>
+                    <button type="reset" class="btn btn-reset">Limpar</button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Por que enviar seu setup?</h2>
+
+        <div class="cards-grid">
+
+            <div class="card">
+                <div class="card-icon">🔥</div>
+                <h3>Mostre seu estilo</h3>
+                <p>
+                    Cada setup é único. RGB, minimalista, full black ou clean —
+                    compartilhe sua identidade gamer com a comunidade.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💡</div>
+                <h3>Inspire outros gamers</h3>
+                <p>
+                    Seu setup pode ser a inspiração que alguém precisa para montar
+                    o PC dos sonhos.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Destaque na galeria</h3>
+                <p>
+                    Os melhores setups ganham destaque na TechZone e podem aparecer
+                    no ranking da comunidade.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+ 
+    <section class="section">
+        <h2 class="section-title">Dicas para um setup incrível</h2>
+
+        <div class="cards-grid">
+
+            <div class="card">
+                <div class="card-icon">💡</div>
+                <h3>Iluminação</h3>
+                <p>
+                    Use luz indireta ou RGB para destacar seu setup e criar um visual
+                    mais imersivo.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📸</div>
+                <h3>Boa foto</h3>
+                <p>
+                    Tire a foto em alta qualidade, com bom ângulo e sem bagunça ao fundo.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <h3>Detalhes importam</h3>
+                <p>
+                    Cite suas peças (GPU, CPU, monitor, periféricos). Isso agrega muito valor.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="forum.html">Fórum</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; 2026 TechZone - Comunidade Gamer. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const inputImagem = document.getElementById("imagem");
+        const preview = document.getElementById("preview");
+        const form = document.querySelector("form");
+
+        // Preview da imagem
+        inputImagem.addEventListener("change", function (event) {
+            const file = event.target.files[0];
+
+            if (file) {
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = "block";
+            }
+        });
+
+        // Reset do formulário (inclui imagem)
+        form.addEventListener("reset", function () {
+            setTimeout(() => {
+                preview.src = "";
+                preview.style.display = "none";
+            }, 0);
+        });
+    </script>
+
+</body>
+
+</html>
