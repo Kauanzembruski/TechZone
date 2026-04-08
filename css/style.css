@@ -560,7 +560,14 @@ footer {
 
 
 .page-header {
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+    background:
+        linear-gradient(rgba(10, 10, 15, 0.6), rgba(10, 10, 15, 0.9)),
+        url('../img/banner.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     padding: 60px 20px;
     text-align: center;
 }
