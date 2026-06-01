@@ -110,15 +110,7 @@ O site foi desenvolvido para proporcionar uma excelente experiência em diferent
 
 ---
 
-# 📸 Demonstração
 
-Adicione aqui capturas de tela do projeto:
-
-```md
-![Home](imagens/home.png)
-![Galeria](imagens/galeria.png)
-![Fórum](imagens/forum.png)
-```
 
 ---
 
